@@ -1,0 +1,63 @@
+<script>
+//REVERSE THE STRING
+   let string = "Janani"
+   let reverse = ""
+   for(let i =string.length-1;i>=0;i--){
+    reverse += string[i]
+    }
+   console.log(reverse);
+
+//CKECK PALINDROME
+   let str = "madam"
+   let isPalindrome = true
+   for(let i=0;i<str.length/2;i++){
+    if(str[i] !== str[str.length-1-i]){
+        isPalindrome = false
+        break
+    }
+   }
+   console.log(isPalindrome);
+
+   //COUNT THE NUMBER OF VOWELS
+
+   let stri = "janani"
+   let count = 0
+   let vowels = "aeiouAEIOU"
+   for(let i=0;i<=stri.length;i++){
+    for(let j=0;j<vowels.length;j++){
+        if(stri[i] === vowels[j]){
+            count++
+            break
+        }
+    }
+   }
+   console.log(count);
+
+
+//Check Prime or not
+   let number = 4
+   let isPrime = true
+
+   if(number <= 1){
+    isPrime = false
+   }
+
+   for(let i=2;i<number;i++){
+    if(number%i === 0){
+        isPrime = false
+      
+    }
+   
+}
+ 
+   console.log(isPrime);
+   
+   
+   
+
+
+
+   
+  
+  
+</script>
